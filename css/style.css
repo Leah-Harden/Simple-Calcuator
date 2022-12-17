@@ -1,0 +1,57 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: Gotham Rounded, sans-serif;
+  font-weight: bold;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background: linear-gradient(to top, #e246bb, #ecff7f);
+}
+
+.calculator-grid {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  min-height: 100vh;
+  grid-template-columns: repeat(4, 100px);
+  grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+}
+
+.calculator-grid > button {
+  cursor: pointer;
+  font-size: 2rem;
+  border: 1px solid white;
+  color: white;
+  background-color: black;
+  opacity: 85%;
+}
+.calculator-grid > button:hover {
+  background-color: rgb(56, 55, 55);
+}
+.span-two {
+  grid-column: span 2;
+}
+.output {
+  grid-column: 1 /-1;
+  background-color: rgb(255, 245, 218);
+  color: black;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  flex-direction: column;
+  padding: 2%;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+.output .previous-number {
+  color: rgb(82, 82, 82);
+  font-size: 25px;
+}
+
+.output .current-number {
+  font-size: 50px;
+}
