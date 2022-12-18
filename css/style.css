@@ -47,11 +47,11 @@ body {
   word-wrap: break-word;
   word-break: break-all;
 }
-.output .previous-number {
+.output .previous-operand {
   color: rgb(82, 82, 82);
   font-size: 25px;
 }
 
-.output .current-number {
+.output .current-operand {
   font-size: 50px;
 }
